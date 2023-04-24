@@ -22,7 +22,8 @@ touch ~/.oh-my-zsh/themes/custom-ttr.zsh-theme
 
 cat <<"TAGTEXTFILE" >> ~/.oh-my-zsh/themes/custom-ttr.zsh-theme
 function get_date() {
-  echo "%{$FG[130]%}[%T]%{$reset_color%}"
+  DATE=$(TZ='Europe/Paris' date +' %H:%M')
+  echo "%{$FG[130]%}[%$DATE]%{$reset_color%}"
 }
 
 function get_user_host() {
