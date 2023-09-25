@@ -16,6 +16,7 @@ echo 'export VOLTA_HOME="$HOME/.volta"' >> ~/.zshrc
 echo 'export PATH="$VOLTA_HOME/bin:$PATH"' >> ~/.zshrc
 echo '. "$HOME/.cargo/env"' >> ~/.zshrc
 echo 'alias maria="docker exec -it alchemy-mariadb-1 mysql -uroot -p oee"' >> ~/.zshrc
+echo 'alias gc="git checkout"' >> ~/.zshrc
 
 # Add custom theme
 touch ~/.oh-my-zsh/themes/custom-ttr.zsh-theme
